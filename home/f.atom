@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://10gulmohar.com</id>
+    <title>10Gulmohar</title>
+    <updated>2021-05-29T15:03:27Z</updated>
+    <generator>10Gulmohar</generator>
+    <author>
+        <name>10Gulmohar</name>
+    </author>
+    <link rel="alternate" href="https://10gulmohar.com"/>
+    <link rel="self" href="https://10gulmohar.com/home/f"/>
+    <subtitle>10Gulmohar</subtitle>
+    <entry>
+        <title type="html"><![CDATA[In the GREENS is where the real work happens]]></title>
+        <id>in-the-greens-is-where-the-real-work-happens</id>
+        <link href="https://10gulmohar.com/home/f/in-the-greens-is-where-the-real-work-happens">
+        </link>
+        <updated>2021-05-29T15:03:27Z</updated>
+        <content type="html"><![CDATA[<img src="https://img1.wsimg.com/isteam/ip/3e2191be-d545-4cc2-8776-92f5b259c288/134362977_3743144225803339_7719440019015120877.jpg"/><p>Plants in offices purify the air: they reduce concentrations of CO2  and volatile organic compounds, keeping the air fresh and healthy. </p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Perqs of a 'workation' destination in Gurugram.]]></title>
+        <id>the-perqs-of-a-workation-not-too-far-from-home</id>
+        <link href="https://10gulmohar.com/home/f/the-perqs-of-a-workation-not-too-far-from-home">
+        </link>
+        <updated>2021-05-17T07:19:27Z</updated>
+        <content type="html"><![CDATA[<img src="https://img1.wsimg.com/isteam/ip/3e2191be-d545-4cc2-8776-92f5b259c288/View.jpeg"/><p>"I do not work, as work is pure enjoyment for me." ~ A popular adage</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[10Gulmohar: The Green 'Workspance']]></title>
+        <id>10gulmohar-the-green-workspance</id>
+        <link href="https://10gulmohar.com/home/f/10gulmohar-the-green-workspance">
+        </link>
+        <updated>2021-04-24T06:12:00Z</updated>
+        <content type="html"><![CDATA[<img src="https://img1.wsimg.com/isteam/ip/3e2191be-d545-4cc2-8776-92f5b259c288/152145800_3881787095272384_2920848216892218650.jpg"/><p>"Conservation is a state of harmony between men and land." Well said Aldo Leopold.</p>]]></content>
+    </entry>
+</feed>
