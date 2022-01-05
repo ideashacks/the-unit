@@ -16,8 +16,7 @@
 
 
 .bg-img {
-	backgroung-image: url(gulmohar-image/View.jpeg);
-	background-position: top center;
+	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100%;
@@ -31,11 +30,11 @@
 }
 .bg-img-2 {
 	background-image: url(../img/slider/banner2.jpg);
-}
+}*/
 .bg-img-3 {
 	background-image: url(gulmohar-image/View.jpeg);	
 }
-*/
+
 
 /* Animations for content elements */
 
