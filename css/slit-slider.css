@@ -33,6 +33,9 @@
 }
 .bg-img-3 {
 	background-image: url(gulmohar-image/View.jpeg);
+	background-repeat: no-repeat;
+    	background-position: top;
+	
 }
 
 
