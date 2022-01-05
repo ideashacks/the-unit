@@ -16,7 +16,8 @@
 
 
 .bg-img {
-	background-position: center;
+	backgroung-image: url(gulmohar-image/View.jpeg);
+	background-position: top center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	
