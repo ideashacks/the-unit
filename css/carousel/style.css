@@ -81,6 +81,7 @@ body {
   
 .row {
   overflow: hidden;
+  border-color: #000;
 }  
 
 /* JsFiddle Example only/don't use */
