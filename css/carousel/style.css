@@ -5,8 +5,8 @@
 
 .customer-logos {
   overflow: inherit;
-  border-top: 1px solid #353535;
-  border-bottom: 1px solid #353535;
+  border-top: 0px solid #353535;
+  border-bottom: 0px solid #353535;
 }
 
 .slick-slide img {
@@ -81,7 +81,6 @@ body {
   
 .row {
   overflow: hidden;
-  border-color: #000;
 }  
 
 /* JsFiddle Example only/don't use */
