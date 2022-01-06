@@ -5,8 +5,8 @@
 
 .customer-logos {
   overflow: inherit;
-  border-top: 0px solid #353535;
-  border-bottom: 0px solid #353535;
+  border-top: 0px solid #fff;
+  border-bottom: 0px solid #fff;
 }
 
 .slick-slide img {
