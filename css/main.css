@@ -164,6 +164,7 @@ main > section {
 }
 
 .sec-title {
+	margin:auto;
     margin-bottom: 50px;
 }
 
