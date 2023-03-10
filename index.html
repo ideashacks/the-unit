@@ -41,30 +41,30 @@
 	    <!--end of carousel css-->
 	    
 <!-- 	    bg slider cdn links -->
-<!-- 	 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+	 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
 	       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<!--     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	     -->
-	    
+
 	    <!-- 	    bg slider cdn links -->
-   	
+
 
 		<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-	   
+
 <style type="text/css">
 	#mc_embed_signup{background:none; clear:left; font:14px Helvetica,Arial,sans-serif; color:white; width:100%;}
 </style>
 <style type="text/css">
-	
 
 
 
-	
+
+
 	/* ------------------ General CSS ------------------ */
 *,
 *::before,
@@ -148,22 +148,31 @@ p {
     .pricing-table .ptable-item {
         width: 33.33%;
     }
+	.iframe{
+		display:block !important;
+	}
 }
 
 @media (max-width: 768px) {
     .pricing-table .ptable-item {
         width: 50%;
     }
+	.iframe{
+		display:block !important;
+	}
 }
 
 @media (max-width: 576px) {
     .pricing-table .ptable-item {
         width: 100%;
     }
-	
+	.carousel-inner{
+			height:80vh !important;
+		}
 	.iframe{
 		display:block !important;
 	}
+
 }
 
 .pricing-table .ptable-single {
@@ -331,25 +340,40 @@ p {
     color: #FF6F61;
     background: #ffffff;
 }
-	
+
+/* 	start css for this page */
+
+
+
+	.carousel-item img{
+		height:600px; 
+		object-fit:cover;	
+	}
 	.iframe{
 		display:flex;
 	}
-	
-	
-	
-	
-	
-			
-	
+
+
+
+
 
 </style> 
-		
+
 		<!-- CSS
 		================================================== -->
-		
+
 		<link href='http://fonts.googleapis.com/css?family=Century+Gothic:400,300,700' rel='stylesheet' type='text/css'>
-		
+
+
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+		  integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+		  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+	<!-- 		fontawesome cdn links -->
+<!-- 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+		<!-- Fontawesome Icon font -->
+
 		<!-- Fontawesome Icon font -->
         <link rel="stylesheet" href="css/font-awesome.min.css">
 		<!-- bootstrap.min -->
@@ -365,7 +389,7 @@ p {
 		<!-- Main Stylesheet -->
         <link rel="stylesheet" href="css/main.css">
 
-	    
+
 
 		<!-- Modernizer Script for old Browsers -->
         <script src="js/modernizr-2.6.2.min.js"></script>
@@ -389,16 +413,16 @@ p {
 </script>
 
 	</head>
-	
+
     <body id="body">
-    
+
 	    <div id="fb-root"></div>
 		<!--<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v6.0&appId=636930200434226&autoLogAppEvents=1"></script>
 	    
 	    <!--
         Fixed Navigation
         ==================================== -->
-        <header id="navigation" class="navbar-inverse navbar-fixed-top animated-header">
+        <header id="navigation" class="navbar-inverse navbar-fixed-top animated-header" style="padding: 0px;">
             <div class="container">
                 <div class="navbar-header">
                     <!-- responsive nav button -->
@@ -408,9 +432,9 @@ p {
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
                     </button>
-			
+
 					<!-- /responsive nav button -->
-					
+
 					<!-- logo -->
 					<h1 class="navbar-brand">
 						<!--<a href="/"><img style="align:left; margin-top:-10px;" src="gulmohar-image/10-Gulmohar_Logo_NoBG_WHITE-0001.png" alt="Logo" width="40%"></a>-->
@@ -421,14 +445,12 @@ p {
 
 				<!-- main nav -->
                 <nav class="collapse navbar-collapse navbar-right" role="navigation">
-                    <ul id="nav" class="nav navbar-nav">
+                    <ul id="nav" class="nav navbar-nav" style="display: block; margin-top:30px; padding-left:20px;">
                         <!--<li Style="display:none"><a href="#body">Home</a></li>
 			<li>
 			<li class="dropdown">
     			<a href="javascript:void(0)" class="dropbtn">Locations</a>
-    			<div class="dropdown-content">
-				<a href="#index">The Unit | Faridabad</a>
-      				<a href="https://10gulmohar.ideashacks.com">10Gulmohar | Gurgaon</a>			    
+	@@ -456,1090 +291,1188 @@ <h1 class="navbar-brand">
     			</div>
   			</li>			
 			</li>-->
@@ -442,7 +464,7 @@ p {
 			<li><a title="9AM to 6PM" href="tel:+91-8448777687"><i class="fa fa-phone"></i> +91-8448777687</a></li>
                     </ul>
                 </nav>
-																	      
+
 	      		<style>
 
 
@@ -478,9 +500,9 @@ li.dropdown {
 }
 </style>
 				<!-- /main nav -->
-			     
-																	      
-	
+
+
+
 <!-- Google Analytics -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -496,7 +518,7 @@ li.dropdown {
 <!-- Collect.Chat -->																	      
 <script async>(function(w, d) { w.CollectId = "5b7b2b4dec635f8324347db1"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
 <!-- End Collect.Chat -->   
-		    
+
 <style>
 .responsive {
   width: 100%;
@@ -532,16 +554,16 @@ Visibility:visible;
             <div id="slider" class="sl-slider-wrapper">
 
 				<div class="sl-slider">
-				
-					
+
+
                         </div>
-						
+
 					</div>
-					
-					
+
+
 					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
-						
-<!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img class="d-block w-100" src="img/Banner01.jpg" alt="First slide">
@@ -549,9 +571,9 @@ Visibility:visible;
           <div class="carousel-item">
             <img class="d-block w-100" src="img/Banner01.jpg" alt="Second slide">
           </div>
-           <div class="carousel-item">
+          <!-- <div class="carousel-item">
             <img class="d-block w-100" src="Banner01.jpg" alt="Third slide">
-          </div> 
+          </div> -->
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -561,33 +583,33 @@ Visibility:visible;
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
-      </div> -->
-												
-						<div class="bg-img bg-img-3" title="Website Header @ The Unit | powered by IDEASHACKS Co."></div>
+      </div>
+
+<!-- 						<div class="bg-img bg-img-3" title="Website Header @ The Unit | powered by IDEASHACKS Co."></div> -->
 						<div class="slide-caption">
                             <div class="caption-content">
                                 <h2><span style="color:white">#STARTOGETHER</span></h3>
-                               
-            
+
+
 <div id="mc_embed_signup">
 <form action="//ideashacks.us14.list-manage.com/subscribe/post?u=f30e0f455295a6353fe20381a&amp;id=a272ec58d2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
-	
-	
+
+
     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f30e0f455295a6353fe20381a_f1e147487e" tabindex="-1" value=""></div>
     <div class="clear"><input type="submit" value="Book A Tour" name="Book A Tour" id="mc-embedded-subscribe" class="btn btn-orange btn-effect"></div>
     </div>
 </form>
 </div>
-																	       
+
   <div id="mc_embed_signup">
 <form action="//ideashacks.us14.list-manage.com/subscribe/post?u=f30e0f455295a6353fe20381a&amp;id=6fa7b659b8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">																     
     </div>
 </form>
 </div>
-																	  
+
 </div>
                             </div>
                         </div>
@@ -596,24 +618,24 @@ Visibility:visible;
 
 				</div><!-- /sl-slider -->
 
-               
+
 
 			</div><!-- /slider-wrapper -->
 		</section>
-		
+
         <!--
         End Home SliderEnd
         ==================================== -->
-				
-				  
+
+
 			<!-- about section -->
 			<!--
 			<div box-shadow: 0px -10px;>		
 				<img src="img/VirtualOffice.png" alt="VirtualOffice | The Unit | IDEASHACKS" class="responsive"></img>
 			</div>-->
 			<!-- end about section -->
-												       
-										 
+
+
 			<!-- about section -->
 			<section id="about" style="display:none;">
 				<div class="container">
@@ -623,7 +645,7 @@ Visibility:visible;
 								<h3>OUR VISION</h3>
 								<div id="works">
 									<div class="work-item">
-                                  
+
 										<p>To enable local innovation by fostering culture, creating enabling experiences and executing on bespoke meaningful reinforcements.<br></p>
 										<p>| IdeasHacks Coworking<br> </p>
 									</div>
@@ -643,9 +665,9 @@ Visibility:visible;
 				            </div>
 					</div>
 			<!-- end about section -->
-										 
+
 			<!-- Service section -->
-			<section id="service">
+<!-- 			<section id="service">
 				<div class="container">
 					<div class="row">
 					
@@ -695,21 +717,105 @@ Visibility:visible;
 					</div>
 					</div>
 				</div>
-			</section>
+			</section> -->
 			<!-- end Service section -->
-												   
+
+			<style>
+.slidelogo img {
+  width: 150px;
+  height: 100px;
+  animation: scrolllogo 60s linear infinite;
+  object-fit: contain;
+}
+
+.slide-tracklogo {
+  width: 100%;
+  display: flex;
+  gap: 3em;
+  overflow: hidden;
+}
+
+/* .slider {
+   margin-top: 70px;
+  padding: 8em 2em; 
+} */
+
+@keyframes scrolllogo {
+  0% {transform: translateX(0);}
+  100% {transform: translatex(-1000%)}
+}
+			</style>
+
 		<!-- Patrons section -->
 			<section id="portfolio">
 				<div class="container">
 					<div class="row">
-					
-						<div class="sec-title text-center wow animated fadeInDown">
-							<h2>OUR PATRONS TRUST US</h2>
-							<p>SOME OF OUR ESTEEMED CLIENTS</p>
+					<div class="sec-title text-center" style="width:100%;">
+										  <h2 class="wow animated bounceInLeft">OUR PATRONS TRUST US</h2>
+							<p class="wow animated bounceInRight">SOME OF OUR ESTEEMED CLIENTS</p>
 						</div>
-						
 
-						<ul class="project-wrapper wow animated fadeInUp">
+
+							 <div class="slider">
+							    <div class="slide-tracklogo">
+							      <div class="slidelogo">
+								<img src="img/Lybrate-logo.webp" alt="">
+							      </div>
+							      <div class="slidelogo">
+								<img src="img/Gmobi-logo.webp" alt="">
+							      </div>
+							      <div class="slidelogo">
+								<img src="img/Hill.webp" alt="">
+							      </div>
+							      <div class="slidelogo">
+								<img src="img/Mcarbon-logo.webp" alt="">
+							      </div>
+							      <div class="slidelogo">
+								<img src="img/Godrej-logo.webp" alt="">
+							      </div>
+							      <div class="slidelogo">
+								<img src="img/ImpactX-Logo.webp" alt="">
+							      </div>
+							      <div class="slidelogo">
+								<img src="img/Lybrate-logo.webp" alt="">
+							      </div>
+							      <div class="slidelogo">
+								<img src="img/Gmobi-logo.webp" alt="">
+							      </div>
+							      <div class="slidelogo">
+								<img src="img/Hill.webp" alt="">
+							      </div>
+							      <div class="slidelogo">
+								<img src="img/Mcarbon-logo.webp" alt="">
+							      </div>
+							      <div class="slidelogo">
+								<img src="img/Godrej-logo.webp" alt="">
+							      </div>
+							      <div class="slidelogo">
+								<img src="img/ImpactX-Logo.webp" alt="">
+							      </div>
+							      <div class="slidelogo">
+								<img src="img/Lybrate-logo.webp" alt="">
+							      </div>
+							      <div class="slidelogo">
+								<img src="img/Gmobi-logo.webp" alt="">
+							      </div>
+							      <div class="slidelogo">
+								<img src="img/Hill.webp" alt="">
+							      </div>
+							      <div class="slidelogo">
+								<img src="img/Mcarbon-logo.webp" alt="">
+							      </div>
+							      <div class="slidelogo">
+								<img src="img/Godrej-logo.webp" alt="">
+							      </div>
+							      <div class="slidelogo">
+								<img src="img/ImpactX-Logo.webp" alt="">
+							      </div>
+
+							    </div>
+							  </div>
+<!-- 						<ul class="project-wrapper wow animated fadeInUp">
 							<li class="portfolio-item">
 								<img src="img/Lybrate-logo.webp" class="img-responsive" alt="Lybrate @ The Unit|IDEASHACKS">
 							</li>
@@ -730,23 +836,199 @@ Visibility:visible;
 							
 							</li>	
 								 
-						</ul>
-						
+						</ul> -->
+
 					</div>
 				</div>
 			</section>
 			<!-- end Portfolio section -->
-			
+				 <style>
+        .pricecontainer{
+            display: flex;
+            justify-content: space-between;
+        }
+        .priceheading{
+		text-transform: uppercase;
+            text-align: center;
+            margin: 50px;
+
+        }
+        .pricecontent{
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px;
+            width: 30%;
+        }
+        .pricecontent:hover{
+            /* box-shadow: 0px 0px 5px #ff7f50; */
+/*             border: 1px solid #ff7f50; */
+            border-radius: 5px;
+        }
+        .pimg{
+            width: 100%;
+        }
+        .pimg img{
+            border-radius: 5px 5px 0px 0px;
+            width: 100%;
+        }
+        .ptext{
+            text-align: justify;
+            padding: 10px;
+        }
+        .ptext h3{
+            margin-top: 10px !important;
+        }
+					 .pbtn{
+						 border: none;
+						 border-radius: 5px;
+						 margin-top: 10px;
+					 	padding: 10px;
+						 color:white;
+						 background-color:#ff7f50;
+					 }
+        .svgicon{
+            display: flex;
+            justify-content: space-between;
+        }
+        #svgicon{
+            margin-top: 100px;
+        }
+        .icon{
+            text-align: center;
+            width: 20%;
+        }
+        .icon img{
+            width: 50%;
+        }
+        @media (max-width:780px) {
+            .pricecontainer{
+
+            display: block;
+            margin: auto;
+        }
+        .pricecontent{
+            width: 60%;
+            margin: auto;
+            margin-bottom: 50px;
+        }
+        }
+        @media (max-width:550px) {
+            .pricecontent{
+            width: 100%;
+            margin: auto;
+            margin-bottom: 50px;
+        }
+        .svgicon{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        }
+        .icon{
+            text-align: center;
+            width: 25%;
+        }
+        }
+    </style>
+
+			 <section id="pricesection" style="padding: 0px;">
+					<div class="container">
+
+						<div class="sec-title text-center" style="width:100%;">
+										  <h2 class="wow animated bounceInLeft">Start Today. Start Together.</h2>
+							<p class="wow animated bounceInRight">A space that fosters innovation</p>
+						</div>
+					    <div class="pricecontainer">
+						<div class="pricecontent priceone">
+						    <div class="pimg">
+							<img src="img/price1.jpg" alt="">
+						    </div>
+						    <div class="ptext">
+							<h3>Freelancers</h3>
+							<p>Our spaces are designed for you to get productive, get creative and when the need arises, to get collaborative. We offer several plans as well to adjust to your need for flexible working.</p>
+							<button class="pbtn btn1">500 + GST</button>
+							<button class="pbtn btn2">Learn More</button>
+						    </div>
+						</div>
+
+						<div class="pricecontent priceone">
+						    <div class="pimg">
+							<img src="img/price1.jpg" alt="">
+						    </div>
+						    <div class="ptext">
+							<h3>Startups/SMEs</h3>
+							<p>We have private and open spaces designed for startups and SMEs that may be small in strength, but whose ideas are larger than life.</p>
+							<!-- <button class="btn btn1">500 + GST</button> -->
+							<button class="pbtn btn2" style="margin-top:35px;">Learn More</button>
+						    </div>
+						</div>
+
+						<div class="pricecontent priceone">
+						    <div class="pimg">
+							<img src="img/price1.jpg" alt="">
+						    </div>
+						    <div class="ptext">
+							<h3>Enterprise Teams</h3>
+							<p>Big companies need big solutions. We’ll get to know your company and offer customised office solutions that best suit your business.</p>
+							<!-- <button class="btn btn1">500 + GST</button> -->
+							<button class="pbtn btn2" style="margin-top:60px;">Learn More</button>
+						    </div>
+						</div>
+					    </div>
+					</div>
+				    </section>
+
+				    <section id="svgicon" style="padding: 0px;">
+					<div class="container">
+						<div class="sec-title text-center" style="width:100%;">
+										  <h2 class="wow animated bounceInLeft"><b>#FutureForward</b> Luxury Services</h2>
+							<p class="wow animated bounceInRight">A space that fosters innovation</p>
+						</div>
+					    <div class="svgicon">
+						<div class="icon">
+						    <img src="img/icon1.svg" alt="">
+						    <h6>Hassle Free Setup</h6>
+						</div>
+						<div class="icon">
+						    <img src="img/change.svg" alt="">
+						    <h6>Easy Customisation</h6>
+						</div>
+						<div class="icon">
+						    <img src="img/heart.svg" alt="">
+						    <h6>Safe And Secure <br>Workspaces</h6>
+						</div>
+						<div class="icon">
+						    <img src="img/wifi4.svg" alt="">
+						    <h6>High Speed Wi-Fi</h6>
+						</div>
+						<div class="icon">
+						    <img src="img/playzone5.svg" alt="">
+						    <h6>Game Zones</h6>
+						</div>
+						<div class="icon">
+						    <img src="img/clean.svg" alt="">
+						    <h6>Daily Cleaning &<br> Sanitisation</h6>
+						</div>
+						<div class="icon">
+						    <img src="img/no hide cost7.svg" alt="">
+						    <h6>No Hidden Costs</h6>
+						</div>
+					    </div>
+					</div>
+    						</section>
+
 																		 <!-- Patrons section -->
 			<section id="media">
 				<div class="container">
 					<div class="row">
-					
-						<div class="sec-title text-center wow animated fadeInDown">
-							<h2>IN THE MEDIA</h2>
-							<p>KNOW ABOUT OUR PAST, PRESENT AND FUTURE</p>
+						<div class="sec-title text-center" style="width:100%;">
+										  <h2 class="wow animated bounceInLeft">IN THE MEDIA</h2>
+							<p class="wow animated bounceInRight">KNOW ABOUT OUR PAST, PRESENT AND FUTURE</p>
 						</div>
-						
+<!-- 					
+						<div class="sec-title text-center wow animated fadeInDown">
+							<h2></h2>
+							<p></p>
+						</div> -->
+
 						<!--carousel-->
 						<div class="row">
 		<div class="container">
@@ -763,7 +1045,7 @@ Visibility:visible;
 		  </section>
 		</div>
 	  </div>
-	  
+
 	 <script type="text/javascript">
 		$(document).ready(function() {
  		  $('.customer-logos').slick({
@@ -789,15 +1071,15 @@ Visibility:visible;
 		});
      </script>
 						<!--endofcarousel-->
-						<div><a href="https://in.finance.yahoo.com/news/ideashacks-co-upcycling-buildings-designing-043031345.html"> <p style="text-align:center; padding-top:30px; font-size:25px;">'IDEASHACKS Co. is upcycling buildings and designing <br>state of the art sustainable workspaces'</br></p></a></div>
+						<div style="margin:auto;"><a href="https://in.finance.yahoo.com/news/ideashacks-co-upcycling-buildings-designing-043031345.html"> <p style="text-align:center; padding-top:30px; font-size:25px;">'IDEASHACKS Co. is upcycling buildings and designing <br>state of the art sustainable workspaces'</br></p></a></div>
 
 				</div>
-						
+
 					<!--</div>-->
 				</div>
 			</section>
 			<!-- end Patrons section -->
-												   						   
+
 			<!-- Benefits Section -->
 <!--
 			<div box-shadow: 0px -10px;>		
@@ -805,10 +1087,12 @@ Visibility:visible;
 			</div>
 			</section>-->
 			<!-- end Benefits section -->
-			
+
 			<!-- portfolio section -->
 <div class="container">
-	<div style="text-align:center;"<h2>Ecosystem Support for Meaningful Innovations</h2></div><br>
+	<div style="text-align:center;">
+		<h2>Ecosystem Support for Meaningful Innovations</h2>
+	</div><br>
 	<div class="iframe">
         <iframe width="100%" height="315" src="https://www.youtube.com/embed/tWoTYV3tJhU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <iframe width="100%" height="315" src="https://www.youtube.com/embed/jebMHjYY6k0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
@@ -817,12 +1101,16 @@ Visibility:visible;
                                 <section id="gallery">
 				<div class="container">
 					<div class="row">
-					
-						<div class="sec-title text-center wow animated fadeInDown">
-							<h2>Life@IdeasHacks</h2>
-							<p>#SHACKDAYS</p>
+						<div class="sec-title text-center" style="width:100%;">
+										  <h2 class="wow animated bounceInLeft">Life@IdeasHacks</h2>
+							<p class="wow animated bounceInRight">#SHACKDAYS</p>
 						</div>
-						
+
+<!-- 						<div class="sec-title text-center wow animated fadeInDown">
+							<h2></h2>
+							<p></p>
+						</div> -->
+
 
 						<ul class="project-wrapper wow animated fadeInUp">
 							<li class="portfolio-item">
@@ -890,55 +1178,43 @@ Visibility:visible;
 								</figcaption>
 							</li>
 						</ul>
-						
+
 					</div>
 				</div>
 			</section>
 			<!-- end portfolio section -->
 
-			
 
 
-						
-						
-						
-							<!--pricing demo-->
-						
-       
-						<!--pricing demo-->
-				
-			<!-- end Price section -->
-				
- <!-- Price section -->
-			
-			
+
+
 			<!-- Social section -->
 			<section id="social" class="parallax" style="display:none">
 				<div class="overlay" height="200px">
 					<div class="container">
 						<div class="row">
-						
+
 							<div class="sec-title text-center white wow animated fadeInDown">
 							<ul class="social-button">
 								<li class="wow animated zoomIn"><a href="https://www.linkedin.com/company/9192322?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A9192322%2Cidx%3A1-1-1%2CtarId%3A1473343592025%2Ctas%3Aideashacks"><i class="fa fa-linkedin fa-2x"></i></a></li>
 								<li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="https://www.instagram.com/theunit.ideashacks/"><i class="fa fa-instagram fa-2x"></i></a></li>
 								<li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="https://www.facebook.com/ideashacks/?fref=ts"><i class="fa fa-facebook fa-2x"></i></a></li>
-								
+
 							</ul>
 				</div>
 			</section>
 			<!-- end Social section -->
-			
+
 			<!-- Contact section -->
 			<section id="contact" >
 				<section class="cid-qv7rmTfhmn" id="footer2-6y" data-rv-view="10741">
-					  
+
     <div class="container">
         <div class="media-container-row content mbr-white">
 	    <div class="media-container-row">
 		<div class="col-sm-12">
 
-		   
+
             <div class="col-12 col-md-3 mbr-fonts-style display-7">
                 <p class="mbr-text">
                     <strong>Address</strong>
@@ -968,9 +1244,9 @@ Visibility:visible;
             </div>
             <div class="col-12 col-md-6">
                 <div class="map-responsive"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14031.871802434109!2d77.3080432!3d28.4503825!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x374fb2428806bb28!2sIDEASHACKS%20CO.WORKING!5e0!3m2!1sen!2sin!4v1643717945695!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></iframe></div>
-		    
-		    
-		    
+
+
+
 		    </div>
         </div>
         <div class="footer-lower">
@@ -982,13 +1258,12 @@ Visibility:visible;
         </div>
     </div>
 </section>
-						
+
 			<!-- end Contact section -->
 
 		</main>
-		
-	
-			   <!--  start footer content -->
+
+		   <!--  start footer content -->
 				      <style>
 				      .footerlinks{
 				      		padding-bottom:50px;
@@ -996,9 +1271,9 @@ Visibility:visible;
 				      		color:white;
 				   		width:100%;   
 				      		background-color: #000000e3;
-				      		height:100%;
-				     
-				      
+				      		
+
+
 				      }
 				      .footer_heading{
 				      		text-align:center;
@@ -1006,7 +1281,7 @@ Visibility:visible;
 				      .footer_content{
 				      		display:flex;
 				      		justify-content: center;
-				      		
+
 				      }
 				      .state_content{
 				      		padding-left:0px;
@@ -1016,7 +1291,7 @@ Visibility:visible;
 				      		padding-bottom:10px;
 				      		cursor:pointer;
 				      		list-style-type:none;
-				      
+
 				      }
 				       .state_content li i{
 				      		margin-right:20px;
@@ -1030,8 +1305,8 @@ Visibility:visible;
 				      .ourservices{
 				      		display:flex;
 				      		justify-content:center;
-				      		
-				      		
+
+
 				      }
 @media (max-width: 992px) {
    		 .footerlinks{
@@ -1040,8 +1315,8 @@ Visibility:visible;
  }
 .footer_content{
 	display:block;
-				      		
-				      		
+
+
  }  
 }
 
@@ -1052,8 +1327,8 @@ Visibility:visible;
  }
 .footer_content{
 	display:block;
-				      		
-				      		
+
+
  }
 }
 
@@ -1064,8 +1339,8 @@ Visibility:visible;
  }
 .footer_content{
 	display:block;
-				      		
-				      		
+
+
  }
 }
  /* media Query start footer section */
@@ -1076,8 +1351,8 @@ Visibility:visible;
  }
           .ourservices{
 	display:block;
-				      		
-				      		
+
+
  }  
 	.mini_content{
 		width:50%;		      }
@@ -1090,8 +1365,8 @@ Visibility:visible;
  }
 .ourservices{
 	display:block;
-				      		
-				      		
+
+
  }
 .mini_content{
 		width:50%;		      }
@@ -1104,8 +1379,8 @@ Visibility:visible;
  }
 .ourservicest{
 	display:block;
-				      		
-				      		
+
+
  }
 	.mini_content{
 		width:100%;		      }
@@ -1120,15 +1395,15 @@ Visibility:visible;
 				      }	
 					      .white a:visited{
 					      color:white;
-					      
+
 					      }
  </style>
 		<footer id="footer">
 				    <section class="footerlinks">
 					 <div class="container">
-							         
+
 							       <div class="ourservices">
-							     
+
 										<div class="mini_content  servicescontent">
 											<h2 style="color:white;">Business Support Services</h2>
 											<ul class="state_content">
@@ -1139,7 +1414,7 @@ Visibility:visible;
 												 <li><i class="fa-solid fa-chevron-right"></i><a class="white" href="https://www.ideashacks.com/">Startup India Recognition</a></li>
 
 
-	    
+
 													    </ul>
 													    </div>
 										<div class="mini_content  servicescontent">
@@ -1149,43 +1424,42 @@ Visibility:visible;
 												  <li><i class="fa-solid fa-chevron-right"></i><a class="white" href="https://impactx.media/spotlight-sudip-samaddar-from-imaginesales-on-the-next-for-crm-and-everything-in-between/">Spotlight</a></li>
 												 <li><i class="fa-solid fa-chevron-right"></i><a class="white" href="https://impactx.media/a-look-into-micro-financing-subhash-acharya-from-seed-fincap/">Financial Inclusion</a></li>
 												 <li><i class="fa-solid fa-chevron-right"></i><a class="white" href="https://impactx.media/vocal-for-local-session-on-bridging-industry-academia-gap-way-forward/">Social Welfare & Not-For-Profits</a></li>
-											
+
 												 <li><i class="fa-solid fa-chevron-right"></i><a class="white" href="https://impactx.media/greenpod-labs-is-solving-the-food-waste-problem-one-sachet-at-a-time/">Agriculture & Technology</a></li>						
 														<li><i class="fa-solid fa-chevron-right"></i><a class="white" href="https://impactx.media/greenpod-labs-is-solving-the-food-waste-problem-one-sachet-at-a-time/">Impact Investing</a></li>			 
                												<li><i class="fa-solid fa-chevron-right"></i><a class="white" href="https://impactx.media/tassets-is-revolutionizing-sme-finance-through-blockchain/">Tech Update</a></li>
 														<li><i class="fa-solid fa-chevron-right"></i><a class="white" href="https://impactx.media/">Course Update</a></li>
 
-	    
+
 													    </ul>
 													    </div>
-																	
+
 											<div class="mini_content  servicescontent">
 											<h2 style="color:white;">Contact US</h2>
 											<ul class="state_content">
 												<li><i class="fa-solid fa-chevron-right"></i><a class="white" href="mailto:ventures@ideashacks.com">Email: ventures@ideashacks.com</a></li>
-			
+
 												  <li><i class="fa-solid fa-chevron-right"></i><a class="white" href="tel:+91-8448777687">Phone: +91 8448777687</a></li>
 <!-- 												 <li><i class="fa-solid fa-chevron-right"></i>Cancel GST Registration</li>
 												 <li><i class="fa-solid fa-chevron-right"></i>GST Annual Return</li>
 												 <li><i class="fa-solid fa-chevron-right"></i>GST eInvoice</li> -->
 
 
-	    
+
 													    </ul>
 												<h2 style="color:white;"><a class="white" href="https://blog.ideashacks.com/">Blog</a></h2>
 													    </div>
-										
+
 										</div>
 
-														   
+
 								      </section>
 									<hr>
 								      <!-- end footer content -->
-			
 			<div class="container">
 				<div class="row text-center">
 					<div class="footer-content">
-	
+
 
 <!--End mc_embed_signup-->
 						<div class="footer-social">
@@ -1197,13 +1471,13 @@ Visibility:visible;
 								<li class="wow animated zoomIn" data-wow-delay="1.2s"><a href="https://www.youtube.com/channel/UCHi5g7FipcbXrWYoZSMtCvQ"><i class="fa fa-youtube fa-3x"></i></a></li>
 							</ul>
 						</div>
-						
+
 						<p>Copyright &copy; 2022 <a href="https://ideashacks.com">IDEASHACKS Co.</a></p>
 					</div>
 				</div>
 			</div>
 		</footer>
-		
+
 		<!-- Essential jQuery Plugins
 		================================================== -->
 		<!-- Main jQuery -->
@@ -1225,8 +1499,8 @@ Visibility:visible;
         <script src="js/wow.min.js"></script>
 		<!-- Custom Functions -->
         <script src="js/main.js"></script>
-			
-	  
+
+
 				<!--whatsapp chatbot-->
 				<script>
     var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?26736';
@@ -1264,6 +1538,6 @@ Visibility:visible;
     var x = document.getElementsByTagName('script')[0];
     x.parentNode.insertBefore(s, x);
 </script>
-	
+
     </body>
 </html>
