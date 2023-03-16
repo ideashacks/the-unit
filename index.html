@@ -1117,6 +1117,117 @@ Visibility:visible;
 			</section>
 			<!-- end Portfolio section -->
 
+<style>
+    #twoclick{
+      padding: 50px 0px;
+      background-color: #f8f9fa!important;
+      position: relative;
+      margin-top: 50px;
+    }
+    .twoclick{
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
+    }
+    .twoclickheading{
+      position:absolute;
+      top: 100px;
+      left: 150px;
+    }
+    
+.twoclickmini {
+    display: flex;
+    width: 50%;
+}
+.twoclickimg{
+  width: 35%;
+}
+.twoclickimg img{
+  box-shadow: 5px 5px 10px ;
+  border-radius: 10px;
+  width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.twoclickmini h4{
+  text-align: center;
+  padding-bottom: 30px;
+  cursor: pointer;
+    border-bottom: 1px solid gray;
+}
+.twoclickmini h4:hover{
+    border-bottom: 5px solid #ff7f50;
+}
+.twotextfirst{
+  width: 50%;
+}
+.twotextfirst p{
+  width: 200%;
+  margin-top: 70px;
+}
+.twotextsecond{
+  width: 50%;
+}
+.secondimgforhide{
+  display: none;
+}
+.secondp{
+  display: none;
+}
+  </style>
+  <section id="twoclick">
+    <div class="container">
+      <div class="twoclickheading">
+        <h2>Solutions for business of all sizes</h2>
+      </div>
+      <div class="twoclick">
+        <div class="twoclickmini">
+        <div class="twotextfirst">
+              <h4>For individuals/small teams</h4>
+              <div class="firstp">
+              <p>Flexible memberships and turnkey offices that fit all budgets and hybrid strategies. Find space to focus and collaborate at hundreds of locations close to home or around the world.</p>
+              <a href="#">Learn more</a>
+            </div>
+              <div class="secondp">
+              <p   >Power your hybrid strategy, enhance employee experience and save on real estate costs by combining private office, coworking, and software solutions. </p>
+              <a href="#" >Learn more</a>
+              </div>
+
+
+        </div>
+        <div class="twotextsecond" >
+              <h4>For medium/large companies</h4>
+              
+        </div>
+      </div>
+        <div class="twoclickimg">
+          <div class="imgdivone">
+          <img src="img/clickimg1.jpg" class="firstimgforhide" alt="">
+          <img src="img/clickimg2.jpg" class="secondimgforhide" alt="">
+        </div>
+      
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <script>
+    $(document).ready(function(){
+      $('.twotextsecond').click(function(){
+        $('.secondimgforhide, .secondp').show();
+        $('.firstimgforhide, .firstp').hide();
+      });
+
+      $('.twotextfirst').click(function(){
+        $('.firstimgforhide, .firstp').show();
+        $('.secondimgforhide, .secondp').hide();
+      
+      });
+    });
+  </script>
+
 				
 
 																		 <!-- Patrons section -->
